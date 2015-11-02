@@ -1,0 +1,102 @@
+﻿<HTML>
+<HEAD>
+<META HTTP-EQUIV="charset" CONTENT="utf-8">
+<TITLE>Playback Log for Test22</TITLE>
+<STYLE TYPE="text/css">
+<!--
+  table caption {color: darkblue; font-size: x-large; font-weight: bold}
+  td {align: left; font-weight: bold}
+  td.fail {color: darkred; width: 10% }
+  td.warn {color: darkgoldenrod; width: 10% }
+  td.pass {color: darkgreen; width: 10% }
+  td.unkn {color: darkcyan; width: 10% }
+  td.info {width: 10% }
+  td.time {width: 30%; font-weight: normal}
+  td.note {align: left; font-weight: bold}
+  li {font-weight: normal}
+-->
+</STYLE>
+<SCRIPT>
+<!--
+function comparator(logDir,base,exp,act)
+{
+	try{
+		document.ComparatorApplet.startComparatorEx(base,exp,act,logDir);
+	}
+	catch(e){
+		alert("CRFCN0309E: Error creating the verification point display:\nCRFCN0310E: To view the verification point results, an enabled JRE (1.3.1_02 or later) must be associated with the browser");
+	}
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<TABLE WIDTH="100%" border="1" rules="rows" summary="Log events">
+<SCRIPT>
+<!--
+if (self == top)
+	document.write('<CAPTION>Log: Test22</CAPTION>')
+//-->
+</SCRIPT>
+<TR>
+<TD>&nbsp;</TD>
+<TD CLASS="time">25-Oct-2015 05:57:29.738 PM</TD>
+<TD CLASS="note">Script start [Test22]</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>line_number = </I>1</LI>
+<LI><I>script_iter_count = </I>0</LI>
+<LI><I>script_name = </I>Test22</LI>
+<LI><I>script_id = </I>Test22.java</LI>
+</UL>
+</TD></TR>
+<TR>
+<TD ID="warn0" CLASS="warn">Warning</TD>
+<TD CLASS="time">25-Oct-2015 05:58:01.398 PM</TD>
+<TD CLASS="note">"Enabling the script find, scoring find failed  "GuiTestObject(Name: <b>addbutton</b>, Map: Add)</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>script_name = </I>Test22</LI>
+<LI><I>line_number = </I>36</LI>
+<LI><I>script_id = </I>Test22.java</LI>
+</UL>
+</TD></TR>
+<TR>
+<TD ID="warn1" CLASS="warn">Warning</TD>
+<TD CLASS="time">25-Oct-2015 05:58:59.073 PM</TD>
+<TD CLASS="note">"Script find not able to find the target object  "GuiTestObject(Name: <b>addbutton</b>, Map: Add)</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>script_name = </I>Test22</LI>
+<LI><I>line_number = </I>36</LI>
+<LI><I>script_id = </I>Test22.java</LI>
+</UL>
+</TD></TR>
+<TR>
+<TD ID="fail0" CLASS="fail">Fail</TD>
+<TD CLASS="time">25-Oct-2015 06:00:48.593 PM</TD>
+<TD CLASS="note">Test22.testMain had an unhandled exception.</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>exception_name = </I>com.rational.test.ft.ObjectNotFoundException</LI>
+<LI><I>exception_message = </I>Looking for [GuiTestObject(Name: <b>addbutton</b>, Map: Add)] - no plausible candidate was found.</LI>
+<LI><I>script_name = </I>Test22</LI>
+<LI><I>script_id = </I>Test22.java</LI>
+<LI><I>line_number = </I>36</LI>
+<LI><I>exception_stack = </I>	at com.rational.test.ft.object.interfaces.ClientTestObject.invokeProxy(ClientTestObject.java:411)<BR>	at com.rational.test.ft.object.interfaces.GuiTestObject.click(GuiTestObject.java:624)<BR>	at Test22.testMain(Test22.java:36)<BR>	at org.eclipse.equinox.internal.app.EclipseAppContainer.callMethodWithException(EclipseAppContainer.java:587)<BR>	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:198)<BR>	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)<BR>	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)<BR>	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)<BR>	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)<BR>	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)<BR>	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)<BR>	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)<BR>	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)<BR>	at org.eclipse.core.launcher.Main.main(Main.java:34)<BR></LI>
+<LI><I>screen_snapshot = </I><A href=rational_ft_screensnapshot.jpg><IMG src=rational_ft_screensnapshot.jpg height=120 width=160 align=middle></IMG> Click to view full size</A></LI>
+</UL>
+</TD></TR>
+<TR>
+<TD CLASS="fail">Fail</TD>
+<TD CLASS="time">25-Oct-2015 06:00:48.593 PM</TD>
+<TD CLASS="note">Script end [Test22]</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>script_name = </I>Test22</LI>
+<LI><I>script_id = </I>Test22.java</LI>
+</UL>
+</TD></TR>
+</TABLE>
+</BODY>
+</HTML>

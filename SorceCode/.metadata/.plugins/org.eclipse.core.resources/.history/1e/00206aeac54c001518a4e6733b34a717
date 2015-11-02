@@ -1,0 +1,57 @@
+
+import resources.Powerchart_LoginHelper;
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Functional Test Script
+ * @author ap028084
+ */
+public class Powerchart_Login extends Powerchart_LoginHelper
+{
+	/**
+	 * Script Name   : <b>Powerchart_Login</b>
+	 * Generated     : <b>Aug 26, 2015 1:29:44 PM</b>
+	 * Description   : Functional Test Script
+	 * Original Host : WinNT Version 6.1  Build 7601 (S)
+	 * 
+	 * @since  2015/08/26
+	 * @author ap028084
+	 */
+	public void testMain(Object[] args) 
+	{
+		startApp("powerchart");
+		
+		
+		
+		// Window: cernserver.exe: HNAM Logon
+		hnamLogonwindow().inputChars("rh");
+		comboBoxcomboBox().click(atPoint(75,8));
+		comboBoxcomboBox().click();
+		hnamLogonwindow().inputChars("028133");
+		edittext().click(atPoint(41,10));
+		hnamLogonwindow().inputChars("rh028133");
+		comboBoxcomboBox2().click(atPoint(46,15));
+		hnamLogonwindow().inputChars("1201dep");
+		okbutton().click();
+		
+		// Window: cernserver.exe: Error:  Security Failure.
+		boolean k;
+		k=okbutton2().exists();
+		
+		if(k) 
+		okbutton2().click();
+	}
+	
+	
+}
+

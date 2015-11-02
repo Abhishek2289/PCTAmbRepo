@@ -1,0 +1,44 @@
+
+import resources.CalcrecordHelper;
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Functional Test Script
+ * @author ap028084
+ */
+public class Calcrecord extends CalcrecordHelper
+{
+	/**
+	 * Script Name   : <b>Calcrecord</b>
+	 * Generated     : <b>Aug 26, 2015 2:34:46 PM</b>
+	 * Description   : Functional Test Script
+	 * Original Host : WinNT Version 6.1  Build 7601 (S)
+	 * 
+	 * @since  2015/08/26
+	 * @author ap028084
+	 */
+	public void testMain(Object[] args) 
+	{
+		startApp("calc");
+		
+		// Window: calc.exe: Calculator
+		_4button().click(atPoint(16,22));
+		_5button().click(atPoint(11,12));
+		addbutton().click(atPoint(16,10));
+		_3button().click(atPoint(6,12));
+		_2button().click(atPoint(17,16));
+		equalsbutton().click(atPoint(15,24));
+		calculatorwindow(ANY,MAY_EXIT).click(CLOSE_BUTTON);
+	}
+}
+

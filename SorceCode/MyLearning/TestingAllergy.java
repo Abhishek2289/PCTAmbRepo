@@ -1,0 +1,48 @@
+
+import resources.TestingAllergyHelper;
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Functional Test Script
+ * @author ap028084
+ */
+public class TestingAllergy extends TestingAllergyHelper
+{
+	/**
+	 * Script Name   : <b>TestingAllergy</b>
+	 * Generated     : <b>Oct 27, 2015 8:20:43 PM</b>
+	 * Description   : Functional Test Script
+	 * Original Host : WinNT Version 6.1  Build 7601 (S)
+	 * 
+	 * @since  2015/10/27
+	 * @author ap028084
+	 */
+	public void testMain(Object[] args) 
+	{
+		// TODO Insert code here
+		
+		sleep(5);
+		
+		// Window: powerchart.exe: Pat, A - 1234566 Opened by Rao, Mohan
+		addbutton().click(atPoint(24,10));
+		
+		// Window: powerchart.exe: Pat, A - 1234566 Opened by Rao, Mohan
+		//menuBarmenuBar().click(atPoint(377,14));
+		//menuBarmenuBar().click(atPath("Allergy->Add New...->Drug Allergy..."));
+		
+		
+		
+		
+	}
+}
+

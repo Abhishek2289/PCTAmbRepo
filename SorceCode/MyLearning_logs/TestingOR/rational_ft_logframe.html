@@ -1,0 +1,103 @@
+﻿<HTML>
+<HEAD>
+<META HTTP-EQUIV="charset" CONTENT="utf-8">
+<TITLE>Playback Log for TestingOR</TITLE>
+<STYLE TYPE="text/css">
+<!--
+  table caption {color: darkblue; font-size: x-large; font-weight: bold}
+  td {align: left; font-weight: bold}
+  td.fail {color: darkred; width: 10% }
+  td.warn {color: darkgoldenrod; width: 10% }
+  td.pass {color: darkgreen; width: 10% }
+  td.unkn {color: darkcyan; width: 10% }
+  td.info {width: 10% }
+  td.time {width: 30%; font-weight: normal}
+  td.note {align: left; font-weight: bold}
+  li {font-weight: normal}
+-->
+</STYLE>
+<SCRIPT>
+<!--
+function comparator(logDir,base,exp,act)
+{
+	try{
+		document.ComparatorApplet.startComparatorEx(base,exp,act,logDir);
+	}
+	catch(e){
+		alert("CRFCN0309E: Error creating the verification point display:\nCRFCN0310E: To view the verification point results, an enabled JRE (1.3.1_02 or later) must be associated with the browser");
+	}
+}
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<TABLE WIDTH="100%" border="1" rules="rows" summary="Log events">
+<SCRIPT>
+<!--
+if (self == top)
+	document.write('<CAPTION>Log: TestingOR</CAPTION>')
+//-->
+</SCRIPT>
+<TR>
+<TD>&nbsp;</TD>
+<TD CLASS="time">28-Oct-2015 01:00:18.762 PM</TD>
+<TD CLASS="note">Script start [TestingOR]</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>line_number = </I>1</LI>
+<LI><I>script_iter_count = </I>0</LI>
+<LI><I>dpStore = </I>{ User : rh028133 }, { Password : mr }, { PatientName : Pat, A }, { OrderA : morphine }, { OrderB : aspirin }, { 6 : Peanuts }</LI>
+<LI><I>script_name = </I>TestingOR</LI>
+<LI><I>script_id = </I>TestingOR.java</LI>
+<LI><I>scriptDpName = </I>\credential.rftdp</LI>
+</UL>
+</TD></TR>
+<TR>
+<TD>&nbsp;</TD>
+<TD CLASS="time">28-Oct-2015 01:00:18.840 PM</TD>
+<TD CLASS="note">Start application [powerchart]</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>name = </I>powerchart</LI>
+<LI><I>line_number = </I>103</LI>
+<LI><I>script_name = </I>TestingOR</LI>
+<LI><I>script_id = </I>TestingOR.java</LI>
+<LI><I>startapp_type = </I>EXECUTABLE</LI>
+<LI><I>startapp_executable = </I>powerchart.exe</LI>
+<LI><I>startapp_working_directory = </I>C:\Program Files\Cerner</LI>
+<LI><I>startapp_arguments = </I> </LI>
+</UL>
+</TD></TR>
+<TR>
+<TD ID="warn0" CLASS="warn">Warning</TD>
+<TD CLASS="time">28-Oct-2015 01:03:48.666 PM</TD>
+<TD CLASS="note">"Enabling the script find, scoring find failed  "ToggleGUITestObject(Name: <b>medicationradioButton</b>, Map: Medication)</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>script_name = </I>TestingOR</LI>
+<LI><I>line_number = </I>60</LI>
+<LI><I>script_id = </I>TestingOR.java</LI>
+</UL>
+</TD></TR>
+<TR>
+<TD ID="warn1" CLASS="warn">Warning</TD>
+<TD CLASS="time">28-Oct-2015 01:04:40.081 PM</TD>
+<TD CLASS="note">"Script find not able to find the target object  "ToggleGUITestObject(Name: <b>medicationradioButton</b>, Map: Medication)</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>script_name = </I>TestingOR</LI>
+<LI><I>line_number = </I>60</LI>
+<LI><I>script_id = </I>TestingOR.java</LI>
+</UL>
+</TD></TR>
+<TR>
+<TD ID="warn2" CLASS="warn">Warning</TD>
+<TD CLASS="time">28-Oct-2015 01:05:42.901 PM</TD>
+<TD CLASS="note">"Enabling the script find, scoring find failed  "GuiTestObject(Name: <b>okbutton</b>, Map: OK)</TD>
+</TR>
+<TR><TD COLSPAN=3><UL>
+<LI><I>script_name = </I>TestingOR</LI>
+<LI><I>line_number = </I>61</LI>
+<LI><I>script_id = </I>TestingOR.java</LI>
+</UL>
+</TD></TR>

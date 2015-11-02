@@ -1,0 +1,147 @@
+
+import resources.TestingORHelper;
+import com.rational.test.ft.*;
+import com.rational.test.ft.object.interfaces.*;
+import com.rational.test.ft.object.interfaces.SAP.*;
+import com.rational.test.ft.object.interfaces.WPF.*;
+import com.rational.test.ft.object.interfaces.dojo.*;
+import com.rational.test.ft.object.interfaces.siebel.*;
+import com.rational.test.ft.object.interfaces.flex.*;
+import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
+import com.rational.test.ft.script.*;
+import com.rational.test.ft.value.*;
+import com.rational.test.ft.vp.*;
+import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+/**
+ * Description   : Functional Test Script
+ * @author ap028084
+ */
+public class TestingOR extends TestingORHelper
+{
+	/**
+	 * Script Name   : <b>TestingOR</b>
+	 * Generated     : <b>Oct 18, 2015 10:22:22 PM</b>
+	 * Description   : Functional Test Script
+	 * Original Host : WinNT Version 6.1  Build 7601 (S)
+	 * @since  2015/10/18
+	 * @author ap028084
+	 */
+	public void navigate_Chart_Section(String k)
+	{
+		
+		  String Component;
+		  Component =k;
+		
+		
+		// Window: powerchart.exe: Pat, A - 1234566 Opened by Rao, Mohan
+		selectComponentToNavigateSysLi().click(atCell(
+                                        atRow(atText(k)), 
+                                        atColumn(atText("Chart"))));
+		 
+	}
+	
+	/*public void AddAllergy()
+	      {
+		         
+		         sleep(20);
+		
+		      
+		addbutton().click(atPoint(14,6));		
+		// Window: powerchart.exe: Pat, A (MRN: 1234566) - Add Allergy/Adverse Effect
+		        sftTreeControl32window().hover(atPoint(85,53));
+		        patAMRN1234566AddAllergyAdvers().inputChars(dpString("AllergyB"));
+		        searchbutton().click(atPoint(39,10));
+		        selectbutton().click(atPoint(22,10));
+		        comboBoxcomboBox().click(ARROW);
+		       _1SubstanceRequiredwin().click(atPoint(468,52));
+		        comboBoxcomboBox2().click(ARROW);
+		       comboBoxcomboBox3().click(atPoint(31,17));
+		      _32770window().click(atPoint(319,344));
+		       patAMRN1234566AddAllergyAdvers().inputChars("test");
+		       addFreeTextbutton(ANY,DISABLED).dragToScreenPoint(
+                                        atPoint(100,9), 
+                                        atPoint(684,517));
+		        okbutton3().click(atPoint(52,9));
+		
+	      }
+	*/
+	
+	public void testMain(Object[] args) 
+	{
+		// Login To Application
+		
+		TestingOR obj= new TestingOR();
+         startApp("powerchart");
+         
+         sleep(10);
+		
+		// Window: cernserver.exe: Millennium Logon
+		mrtext().click(atPoint(22,15));
+		millenniumLogonwindow2().inputChars("mr");
+		okbutton2().click(atPoint(35,9));
+		
+		
+		
+		sleep(20);
+		
+		//Handling PopOver screen
+		
+		boolean k = powerChartOrganizerForRaoMohan(ANY,DISABLED).exists();
+		
+		System.out.println("the value of k is"  + k);
+		
+		if(k==true)
+		{
+			
+			powerChartOrganizerForRaoMohan(ANY,DISABLED).clickDisabled();
+			
+			// Window: powerchart.exe: Announcement
+			closebutton().click(atPoint(15,11));
+			
+		}
+		
+		//Patient Search 
+		
+		// 
+		
+		
+		// Window: powerchart.exe: PowerChart Organizer for Rao, Mohan
+		patientSearchTextBoxtext().click(atPoint(40,4));
+	
+		        powerChartOrganizerForRaoMohan().inputChars(dpString("PatientName"));
+		        powerChartOrganizerForRaoMohan().inputKeys("{ENTER}"); 
+		        
+		        patientSearchOKButtonwindow().click(atPoint(53,12));
+		
+		//Establishing the Relationship on EUR Window 
+		 
+		boolean m;
+		m=listBoxForRelationshipSelectio().exists();
+		
+		if(m==true)
+		   {
+			
+		
+		// Window: powerchart.exe: Assign a Relationship
+		listBoxForRelationshipSelectio().click(atText("Admitting Physician"));
+			
+		okbutton2().click(atPoint(32,8));
+			
+		   }
+		
+	  // Navigate to the Add Allergy component	
+		
+		obj.navigate_Chart_Section("Allergies");
+		//obj.AddAllergy();
+		
+		
+		//Adding diffrent Allergy to the Patient 
+		
+		
+		
+		
+		
+		
+	}
+}
+

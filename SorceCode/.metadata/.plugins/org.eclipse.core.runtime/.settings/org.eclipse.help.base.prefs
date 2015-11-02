@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+remoteHelpHost=ibm.com,pic.dhe.ibm.com,127.0.0.1
+remoteHelpICEnabled=false,false,false
+remoteHelpName=RFT Knowledge Center,Rational solution for Collaborative Lifecycle Management,Local
+remoteHelpOn=true
+remoteHelpPath=/support/knowledgecenter/SSJMXE_8.6.0,/infocenter/clmhelp/v4r0m4,/help
+remoteHelpPort=80,80,63650
+remoteHelpPreferred=true
+remoteHelpProtocol=http,http,http
+scope=
